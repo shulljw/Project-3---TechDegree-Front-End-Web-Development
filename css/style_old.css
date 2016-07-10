@@ -23,6 +23,7 @@
 
 body {
   font-family: 'Merriweather', serif;
+  background-color: rgba(212,219,237);
   color: rgb(45,57,69) /* black */;
 }
 
@@ -334,6 +335,21 @@ input:-moz-placeholder { /* Firefox 18- */
   
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
