@@ -23,7 +23,7 @@
 
 body {
   font-family: 'Merriweather', serif;
-  background-color: white;
+  background-color: rgba(212,219,237);
   color: rgb(45,57,69) /* black */;
 }
 
@@ -31,6 +31,7 @@ form {
   padding: 1em;
   margin: 0 auto;
   text-align: left;
+  background-color: white;
 }
 
 label {
@@ -54,6 +55,8 @@ color: rgb(170, 175, 180) /* light gray font */;
 border: none;
 border-radius: .25em;
 margin: .5em 0 1.5em 0;
+transition: .5s;
+transition-property: background-color, outline;
 }
 
 input[type="text"]:focus,
@@ -123,6 +126,7 @@ legend {
   background-color: rgb(45,57,69); /* black */
   padding: 1em;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 .name {

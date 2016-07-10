@@ -14,10 +14,11 @@
       <h1 class="name">The Code Review</h1>
     </header>
     <form action="index.html" method="post">
-      
-      <h2 class="form-header">Signup for our newsletter</h2>
-      <h3 class="subheader">Get the latest news on how your code is doing right in your inbox</h3>
-      <hr class="double">
+      <div class="form-header-box">
+        <h2 class="form-header">Signup for our newsletter</h2>
+        <h3 class="subheader">Get the latest news on how your code is doing right in your inbox</h3>
+        <hr class="double">
+      </div>
       
       <fieldset class="fieldset-one"><legend>Contact Information</legend>
         
@@ -36,8 +37,8 @@
         <label for="city">City</label>
         <input type="text" id="city" name="user_city">
         
-        <label>State</label>
-        <select name="state">
+        <label for="state">State</label>
+        <select name="state" id="state">
           <option value="choose">Choose State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
