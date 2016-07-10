@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <title>Project 3 - Sign Up Form</title>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
       <h3 class="subheader">Get the latest news on how your code is doing right in your inbox</h3>
       <hr class="double">
       
-      <fieldset><legend>Contact Information</legend>
+      <fieldset class="fieldset-one"><legend>Contact Information</legend>
         
         <label for="name">Full Name</label>
         <input type="text" id="name" name="user_name" placeholder="Required" required>
@@ -98,20 +98,20 @@
         
         <hr class="single">
         
-      <fieldset><legend>Newsletter</legend>
+      <fieldset class="fieldset-two"><legend>Newsletter</legend>
       
         <h3 class="small left">Select the newsletters you would like to receive</h3>
         
-        <input type="checkbox" id="html_news" value="html_news"><label for="html_news" class="inline-label">HTML News</label><br>
+        <input type="checkbox" id="html_news" value="html_news"><div></div><label for="html_news" class="inline-label">HTML News</label><br>
         
-        <input type="checkbox" id="css_news" value="css_news"><label for="css_news" class="inline-label">CSS News</label><br>
+        <input type="checkbox" id="css_news" value="css_news"><div></div><label for="css_news" class="inline-label">CSS News</label><br>
         
-        <input type="checkbox" id="javascript_news" value="javascript_news"><label for="javascript_news" class="inline-label">Javascript News</label><br>
+        <input type="checkbox" id="javascript_news" value="javascript_news"><div></div><label for="javascript_news" class="inline-label">Javascript News</label><br>
         
         <h3 class="small left">Newsletter format</h3>
-        <input type="radio" name="user_format" id="format_html" value="format_html"><label for="format_html" class="inline-label">HTML</label><br>
+        <input type="radio" name="user_format" id="format_html" value="format_html"><div></div><label for="format_html" class="inline-label">HTML</label><br>
         
-        <input type="radio" name="user_format" id="format_plain_text" value="format_plain_text"><label for="format_plain_text" class="inline-label">Plain text</label><br><br><br>
+        <input type="radio" name="user_format" id="format_plain_text" value="format_plain_text"><div></div><label for="format_plain_text" class="inline-label">Plain text</label><br><br><br>
         
         <label for="other_interests" class="small">Other topics you'd like to hear about</label>
         <textarea id="other_interests" name="other_user_interests"></textarea>

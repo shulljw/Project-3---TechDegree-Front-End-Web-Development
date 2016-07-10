@@ -61,7 +61,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
   background-color: rgb(212,219,237) /* sky blue */;
-  outline: 5px solid rgb(141,182,226) /* darker sky */;
+  outline: 3px solid rgb(141,182,226) /* darker sky */;
   transition-property: background-color, outline;
   transition-duration: .5s;
 }
@@ -77,6 +77,10 @@ input[type="submit"]:focus {
   background-color: rgba(212,219,237,1);
   color: black;
   transition-duration: .5s;
+}
+
+select:focus {
+  outline: 3px solid rgb(141,182,226) /* darker sky */;
 }
 
 textarea {
@@ -158,9 +162,48 @@ legend {
 
 /* styling of radiobox and checkbox */
 
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: absolute;
+    left: -999em;
+  }
+  
+  input[type="checkbox"] + div,
+  input[type="radio"] + div {
+    height: 16px;
+    width: 16px;
+    background-color: rgb(239,240,241);
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: .3em;
+    content: "(&#x2714)";
+  }
+  
+  input[type="radio"] + div {
+    border-radius: 100%;
+  }
+  
+  input[type="checkbox"]:checked + div {
+    border: 3px solid rgb(70,105,139);
+  }
+  
+  input[type="checkbox"]:checked + div {
+    background-image: url('../img/checkmark.jpg');
+    background-size: cover;
+  }
+  
+  input[type="radio"]:checked + div {
+    background-color: rgb(70,105,139);
+    border: 3px solid rgb(70,105,139);
+    box-shadow: 0px 0px 0px 2px #fff inset;
+  }
 
-
-
+  input[type="radio"]:focus + div,
+  input[type="checkbox"]:focus + div {
+    outline: 3px solid rgb(141,182,226);
+  }
+  
+/* styling for labels in second fieldset */
 .small {
   color: rgb(73,93,112) /* lighter black */;
   font-size: 1.2em;
@@ -232,6 +275,65 @@ input:-moz-placeholder { /* Firefox 18- */
 /*********************************
   Media Queries
 *********************************/
+
+@media (min-width: 760px) {
+  
+  form {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+  
+  .form-header {
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .subheader {
+    margin-top: 0;
+    margin-bottom: 2.3em;
+  }
+  
+  .fieldset-one > label {
+    display: inline-block;
+    font-size: 1.5em;
+    width: 28%;
+    margin: 0;
+  }
+  
+  .fieldset-one > input,
+  .fieldset-one > select {
+    max-width: 72%;
+    display: inline-block;
+    margin-left: -5px;
+  }
+  
+  .double {
+    margin-bottom: 4em;
+  }
+  
+  .fieldset-one > legend {
+    margin-bottom: .7em;
+  }
+  
+  .single {
+    margin-bottom: 3.5em;
+  }
+  
+  h3.small,
+  .fieldset-two > label,
+  input[type="radio"],
+  input[type="checkbox"] {
+    font-size: 1.4em;
+    font-weight: 400;
+  }
+  
+  
+  
+  
+}
+
+
+
 
 
 
